@@ -10,7 +10,7 @@ This repository contains the code for a basic React project that utilizes **Vite
 
 This is the **main** branch of the project and contains the following features:
 
-- Basic React components.
+- Basic React,Components - JSX and Props
 - Props handling in React.
 - Project setup using **Vite** for a faster and leaner development experience.
 
