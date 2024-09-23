@@ -1,7 +1,7 @@
 
 import './Video.css';
 
-function Video({title,channel="Coder Dost",views,time,verified,id}) {
+function Video({title,channel="Coder Dost",views,time,verified,id,children}) {
   return (
       <>
       <div className='container'>
@@ -12,6 +12,10 @@ function Video({title,channel="Coder Dost",views,time,verified,id}) {
       <div className="channel">{channel} {verified? '✅': null} </div>
       <div className="views">
         {views} views <span>.</span> {time}
+      </div>
+      <div>
+
+      {children}
       </div>
       </div>
       </>
