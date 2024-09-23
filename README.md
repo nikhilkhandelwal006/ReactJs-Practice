@@ -1,7 +1,7 @@
 
 ---
 
-# ReactJs Practice - Events and Event Handling (Branch: react-4)
+# ReactJs Practice - (Branch: react-4)
 
 This branch focuses on practicing **React.js Events**, **Event Handlers**, and **Event Bubbling** concepts, using **React Vite** as the development environment for a fast and optimized development workflow.
 
