@@ -1,14 +1,28 @@
 import './App.css'
 import PlayButton from './components/playButton';
 import Video from "./components/Video";
-import videos from './data/data';
+import videosDB from './data/data';
+import Counter from './components/counter';
+import { useState } from 'react';
 
 
 function App() {
-  
+  console.log('render app')
+
+  const [videos,setVideos]=useState(videosDB)
+
   return (
-    <div className="App" onClick={()=>console.log('App')}>
-      <div>Videos</div>
+    <div className="App">
+      <div>
+        <button onClick={()=>{
+          setVideos([...videos,{id:videos.length+1,
+            title: 'Mongo DB tutorial',
+            views: '1M',
+            time: '1 month ago',
+            channel: 'Coder Dost',
+            verified: true}])
+        }}>Add button </button>
+      </div>
       {
         videos.map(video=> <Video
         key={video.id}
@@ -30,6 +44,9 @@ function App() {
        <PlayButton  message="pause-msg" onSmash={()=>alert('pause')}>pause</PlayButton> 
        {/* <PlayButton  onPlay={()=>console.log('playyy')} onPause={()=>console.log('pause')}>play</PlayButton> */}
        </div>
+
+
+       <Counter></Counter>
     </div>
   );
 }

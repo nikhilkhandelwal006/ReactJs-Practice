@@ -2,6 +2,7 @@
 import './Video.css';
 
 function Video({title,channel="Coder Dost",views,time,verified,id,children}) {
+  console.log('render video')
   return (
       <>
       <div className='container'>
